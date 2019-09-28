@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "weapp",
+      "script": "index.js",
+      "watch": false,
+      "node_args": "--harmony",
+      "merge_logs": false,
+      "cwd": "./",
+      "instance": 1,
+      "exec_mode": "cluster",
+      "log_date_format": "YYYY-MM-DD HH:mZ"
+    }
+  ]
+}
