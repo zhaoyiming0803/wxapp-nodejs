@@ -14,7 +14,9 @@
   "devDependencies": {
     "crypto": "^1.0.1",
     "koa": "^2.8.1",
-    "sha1": "^1.1.1"
+    "sha1": "^1.1.1",
+    "koa-router": "latest",
+    "koa-bodyparser": "latest"
   },
   "bugs": {
     "url": "https://github.com/zymfe/weapp-nodejs/issues"
