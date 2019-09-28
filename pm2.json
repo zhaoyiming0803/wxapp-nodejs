@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "weapp",
+      "name": "weapp-nodejs",
       "script": "index.js",
       "watch": false,
       "node_args": "--harmony",
