@@ -1,0 +1,19 @@
+{
+  "name": "weapp-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zymfe/weapp-nodejs.git"
+  },
+  "author": "https://github.com/zymfe",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^2.8.1",
+    "sha1": "^1.1.1"
+  }
+}
