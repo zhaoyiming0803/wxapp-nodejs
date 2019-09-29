@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # publish
-tar -czvf weapp.tar.gz .
+tar -czvf wxapp.tar.gz .
 
-mkdir -p /work/api/weapp
-rm -rf /work/api/weapp/*
-cp weapp.tar.gz /work/api/weapp
-cd /work/api/weapp && tar -xvf weapp.tar.gz && npm --registry=https://registry.npm.taobao.org install && pm2 stop pm2.json && pm2 start pm2.json
+mkdir -p /work/api/wxapp
+rm -rf /work/api/wxapp/*
+cp wxapp.tar.gz /work/api/wxapp
+cd /work/api/wxapp && tar -xvf wxapp.tar.gz && npm --registry=https://registry.npm.taobao.org install && pm2 restart pm2.json

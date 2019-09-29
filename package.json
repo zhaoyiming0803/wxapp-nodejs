@@ -1,5 +1,5 @@
 {
-  "name": "weapp-nodejs",
+  "name": "wxapp-nodejs",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zymfe/weapp-nodejs.git"
+    "url": "git+https://github.com/zymfe/wxapp-nodejs.git"
   },
   "author": "https://github.com/zymfe",
   "license": "ISC",
@@ -20,8 +20,8 @@
     "request": "latest"
   },
   "bugs": {
-    "url": "https://github.com/zymfe/weapp-nodejs/issues"
+    "url": "https://github.com/zymfe/wxapp-nodejs/issues"
   },
-  "homepage": "https://github.com/zymfe/weapp-nodejs#readme",
+  "homepage": "https://github.com/zymfe/wxapp-nodejs#readme",
   "description": ""
 }

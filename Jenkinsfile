@@ -2,7 +2,7 @@ pipeline {
 	agent {
 		node {
 			label ''
-			customWorkspace 'workspace/weapp'
+			customWorkspace 'workspace/wxapp'
 		}
 	}
 
