@@ -16,7 +16,8 @@
     "koa": "^2.8.1",
     "sha1": "^1.1.1",
     "koa-router": "latest",
-    "koa-bodyparser": "latest"
+    "koa-bodyparser": "latest",
+    "request": "latest"
   },
   "bugs": {
     "url": "https://github.com/zymfe/weapp-nodejs/issues"
