@@ -11,7 +11,7 @@ const request = require('./helper/request');
 
 app.use(bodyParser());
 
-router.get('/weapp/', async (ctx, next) => {
+router.get('/wxapp/message/', async (ctx, next) => {
   const { signature, timestamp, nonce, echostr } = ctx.query;
   const str = ['zhaoyiming', timestamp, nonce].sort().join('');
   const sha1Str = sha1(str);
@@ -21,7 +21,7 @@ router.get('/weapp/', async (ctx, next) => {
     : 'warning';
 });
 
-router.post('/weapp/', async (ctx, next) => {
+router.post('/wxapp/message/', async (ctx, next) => {
   const { signature, timestamp, nonce, openid, encrypt_type, msg_signature } = ctx.query;
   const wxCrypt = new WxCrypt({
     token: weapp.token,
@@ -34,7 +34,7 @@ router.post('/weapp/', async (ctx, next) => {
   console.log(JSON.parse(wxCrypt.decrypt(Encrypt)));
 });
 
-router.post('/weapp/shareTicket', async (ctx, next) => {
+router.post('/wxapp/shareTicket', async (ctx, next) => {
   const { encryptedData, iv, code } = ctx.request.body;
   const result = await request({
     url: 'https://api.weixin.qq.com/sns/jscode2session' +
